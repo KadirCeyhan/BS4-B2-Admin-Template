@@ -1,0 +1,91 @@
+*:not(i) {
+    font-family: 'Dosis', sans-serif !important;
+}
+body {
+    background: #E4E7E8 !important;
+}
+nav {
+    background: #FFF !important;
+}
+nav .navbar-brand i.fa-cloud {
+    color: #007FFF;
+    text-shadow: 3px -3px #B8DAFF;
+}
+nav .sidebar-toggler {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 15px;
+}
+#side-bar:not(.Vis) {
+    display: none;
+}
+#side-bar.Vis {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    z-index: 9999;
+    overflow: auto;
+    margin-top: 56px;
+    background: #222;
+}
+#side-bar .profile {
+    padding: 15px 0 5px 15px;
+    color: #FFF;
+    background: #111;
+}
+#side-bar .profile img {
+    float: left;
+    width: 34px;
+    height: 34px;
+    margin-top: 2px;
+    margin-right: 15px;
+    margin-left: -5px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+#side-bar .profile p {
+    font-size: 14px;
+}
+#side-bar ul li:hover:not(.nav-title) {
+    background: rgba(255, 255, 255, .1);
+    color: #aaa;
+}
+#side-bar ul li.nav-title {
+    margin: 0;
+    padding: 15px 20px 7px;
+    line-height: 20px;
+    font-size: 11px;
+    color: #999;
+}
+#side-bar ul li a {
+    padding: 7px 20px;
+    line-height: 20px;
+    color: #aaa;
+}
+.page-content.ml-220 {
+    padding: 20px 25px;
+    margin-left: 220px;
+}
+.page-content:not(.ml-220) {
+    padding: 20px;
+    margin-left: 0;
+}
+@media (max-width: 1200px) {
+    nav .navbar-menu {
+        flex-direction: row !important;
+    }
+}
+@media (max-width: 992px) {
+    nav .navbar-menu {
+        flex-direction: row !important;
+    }
+}
+@media (max-width: 768px) {
+    nav .navbar-menu {
+        display: none;
+    }
+}
